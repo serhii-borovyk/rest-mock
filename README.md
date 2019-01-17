@@ -1,4 +1,8 @@
 # rest-mock
-simple Spring Boot based REST server to retrieve list of users by name
+simple Spring Boot based REST server to retrieve list of users
  
-GET: http://localhost:8080/users/?name={caseInsensitiveName}
+Get all users:<br>
+GET: http://localhost:8080/users 
+ 
+Get users by name:<br>
+GET: http://localhost:8080/users/{caseInsensitiveName} 
