@@ -1,4 +1,4 @@
-package com.rest.mock.restmock;
+package com.rest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

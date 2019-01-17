@@ -1,4 +1,4 @@
-package com.rest.mock.restmock;
+package com.rest;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

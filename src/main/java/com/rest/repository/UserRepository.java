@@ -1,6 +1,6 @@
-package com.rest.mock.restmock.repository;
+package com.rest.repository;
 
-import com.rest.mock.restmock.domain.User;
+import com.rest.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

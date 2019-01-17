@@ -1,4 +1,4 @@
-package com.rest.mock.restmock.domain;
+package com.rest.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

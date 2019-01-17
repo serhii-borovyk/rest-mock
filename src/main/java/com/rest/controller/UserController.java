@@ -1,7 +1,7 @@
-package com.rest.mock.restmock;
+package com.rest.controller;
 
-import com.rest.mock.restmock.domain.User;
-import com.rest.mock.restmock.repository.UserRepository;
+import com.rest.domain.User;
+import com.rest.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

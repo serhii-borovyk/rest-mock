@@ -1,7 +1,7 @@
-package com.rest.mock.restmock;
+package com.rest;
 
-import com.rest.mock.restmock.domain.User;
-import com.rest.mock.restmock.repository.UserRepository;
+import com.rest.domain.User;
+import com.rest.repository.UserRepository;
 import io.codearte.jfairy.Fairy;
 import io.codearte.jfairy.producer.person.Person;
 import lombok.RequiredArgsConstructor;
