@@ -10,7 +10,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 @SpringBootApplication
 @RequiredArgsConstructor
@@ -26,8 +26,8 @@ public class RestMockApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Fairy fairy = Fairy.create();
-        IntStream.rangeClosed(1, 200)
-                .mapToObj(i->fairy.person())
+        Stream.generate(fairy::person)
+                .limit(200)
                 .map(this::mapToUser)
                 .peek(u->log.info(u.toString()))
                 .forEach(userRepository::save);
