@@ -15,7 +15,12 @@ public class UserController {
     private final UserRepository repository;
 
     @GetMapping
-    public List<User> getUserByName(@RequestParam String name) {
+    public List<User> getAllUsers() {
+        return repository.findAll();
+    }
+
+    @GetMapping("{name}")
+    public List<User> getUserByName(@PathVariable String name) {
         return repository.findAllByFirstNameContainingIgnoreCase(name);
     }
 
